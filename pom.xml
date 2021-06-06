@@ -119,7 +119,7 @@
         <!-- Use UTF-8 Encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.source>11</maven.compiler.source>
 
         <!-- This build number will be ubdated by Travis-CI -->
         <build.number>build</build.number>
@@ -137,12 +137,12 @@
         <maven-javadoc-plugin.version>3.1.1</maven-javadoc-plugin.version>
         <maven-source-plugin.version>3.1.0</maven-source-plugin.version>
         <maven-surefire-plugin.version>3.0.0-M4</maven-surefire-plugin.version>
-        <java.version>8</java.version>
+        <java.version>11</java.version>
     </properties>
 
     <modules>
         <!-- <module>webgoat-integration-tests</module> -->
-        <module>webgoat-container</module>
+<!--        <module>webgoat-container</module>-->
         <module>webgoat-lessons</module>
         <module>webgoat-server</module>
         <module>webwolf</module>
@@ -194,7 +194,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <source>8</source>
+                    <source>11</source>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
@@ -216,7 +216,7 @@
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.14.0</version>
                 <configuration>
-                    <targetJdk>8</targetJdk>
+                    <targetJdk>11</targetJdk>
                     <failurePriority>1</failurePriority><!-- 5 means fail even on the lowest priority, 0 means never fail -->
                     <rulesets>
                         <!--suppress UnresolvedMavenProperty -->
